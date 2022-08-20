@@ -1,0 +1,32 @@
+Faça um programa no qual o aluno digite duas notas em uma disciplina e o programa deve exibir o valor da média obtida. Desafio: Informe se o aluno está aprovado ou reprovado. Para ser aprovado a média precisa ser maior ou igual a 6.
+
+
+#include<stdio.h>  //scanf(), printf()
+#include<stdlib.h> //system("pause")
+#include<locale.h>
+
+main(){
+	double nota1,nota2,media;
+	
+	setlocale(LC_ALL,"Portuguese");
+	
+	printf("Digite a primeira nota: ");
+	scanf("%lf",&nota1);
+	
+	printf("Digite a segunda nota: ");
+	scanf("%lf",&nota2);
+	
+	media = (nota1+nota2)/2;
+	
+	printf("A media é %.2lf\n\n",media);
+	
+	if (media>=6){
+		printf("Aprovado!\n\n");
+	}else{
+		printf("Reprovado!\n\n");
+	}	
+	
+	system("pause");
+}
+
+
