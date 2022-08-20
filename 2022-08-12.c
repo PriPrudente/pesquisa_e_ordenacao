@@ -19,3 +19,4 @@ main(){
 	
 	system("pause");
 }
+programa2
